@@ -37,6 +37,11 @@
 import fetch from 'node-fetch'
 export default {
     props:['id'],
+    data(){
+        return{
+            dataCocktail:[]
+        }
+    },
     methods:{
         addToCart(){
             this.$store.dispatch('addProductToCart',{

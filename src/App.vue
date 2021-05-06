@@ -64,6 +64,6 @@ export default {
 }
 .cocktail-lists{
   overflow-y: scroll;
-  height: 75vh;
+  height: 80vh;
 }
 </style>

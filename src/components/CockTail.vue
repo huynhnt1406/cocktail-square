@@ -9,7 +9,7 @@
                     <div class="cocktail-detail">
                         <h3>🍹 {{cocktail.strCategory}}</h3>
                         <div class="action">
-                            <a-button type="secondary">
+                            <a-button  type="secondary">
                                 <i class="fa fa-money" aria-hidden="true"> {{money}}</i>
                             </a-button>
                             <a-button type="primary" >
@@ -29,7 +29,7 @@ export default {
     name:'Cocktail',
     data(){
         return{
-            money:20
+            money:20,
         }
     },
     computed: mapGetters(["allCocktails"]),
@@ -41,7 +41,7 @@ export default {
         randomMoney(){
             this.money = this.money + Math.trunc(Math.random() * 100)
             console.log(this.money)
-        }
+        },
     },
     mounted(){
         this.randomMoney()
